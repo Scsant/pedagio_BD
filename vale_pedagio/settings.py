@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+import os
 
 from pathlib import Path
 
@@ -71,18 +72,17 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "vale_pedagio.wsgi.application"
-import os
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'NAME': 'banco_vale_pedagio',  # Substitua pelo nome do banco de dados
+        'USER': 'root',                # Substitua pelo usuário do banco
+        'PASSWORD': '0608@MuBi',       # Substitua pela senha do banco
+        'HOST': '127.0.0.1',           # Ou use o endereço do seu servidor MySQL
+        'PORT': '3306',                # Porta padrão do MySQL
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
