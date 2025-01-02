@@ -76,16 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "vale_pedagio.wsgi.application"
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'banco_vale_pedagio',  # Nome do banco de dados
-        'USER': 'root',                # Usuário do banco
-        'PASSWORD': '0608@MuBi',       # Senha do banco
-        'HOST': '127.0.0.1',           # Ou endereço IP do servidor
-        'PORT': '3306',                # Porta padrão do MySQL
-    }
-}
 
 
 # Password validation
