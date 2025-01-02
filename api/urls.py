@@ -1,11 +1,12 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
-from .views import ValePedagioViewSet
+from .views import ValePedagioViewSet, exportar_para_excel
 
-# Cria um roteador para registrar as rotas do ViewSet
+# Cria o roteador
 router = DefaultRouter()
 router.register(r'vales', ValePedagioViewSet, basename='vale-pedagio')
 
 # Define as URLs do app
-urlpatterns = router.urls
- 
+urlpatterns = router.urls + [
+    path('exportar/excel/', exportar_para_excel, name='exportar_excel'),
+]

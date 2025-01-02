@@ -24,7 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-tt5$lsq*2blg%v3nz(x)ko4yeql6e6kjd@8_n2!@z&4+kdf-pk"
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = False
+
 
 ALLOWED_HOSTS = ['pedagio-bd.onrender.com', '127.0.0.1', 'localhost']
 
@@ -73,13 +75,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "vale_pedagio.wsgi.application"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'banco_vale_pedagio',  # Substitua pelo nome do banco de dados
-        'USER': 'root',                # Substitua pelo usuário do banco
-        'PASSWORD': '0608@MuBi',       # Substitua pela senha do banco
-        'HOST': '127.0.0.1',           # Ou use o endereço do seu servidor MySQL
+        'NAME': 'banco_vale_pedagio',  # Nome do banco de dados
+        'USER': 'root',                # Usuário do banco
+        'PASSWORD': '0608@MuBi',       # Senha do banco
+        'HOST': '127.0.0.1',           # Ou endereço IP do servidor
         'PORT': '3306',                # Porta padrão do MySQL
     }
 }
