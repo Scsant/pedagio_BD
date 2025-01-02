@@ -56,6 +56,15 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.dummy',  # Desativa o banco de dados
+    }
+}
+
+
+
 ROOT_URLCONF = "vale_pedagio.urls"
 
 TEMPLATES = [
