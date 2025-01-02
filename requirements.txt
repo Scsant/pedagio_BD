@@ -2,3 +2,5 @@ Django>=3.2,<4.0
 djangorestframework
 mysqlclient
 gunicorn
+pandas
+openpyxl  # Adicione também, pois é necessário para salvar arquivos Excel
