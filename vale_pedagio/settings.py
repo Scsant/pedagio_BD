@@ -26,7 +26,8 @@ SECRET_KEY = "django-insecure-tt5$lsq*2blg%v3nz(x)ko4yeql6e6kjd@8_n2!@z&4+kdf-pk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]  # Use "*" apenas para teste, restrinja em produção.
+ALLOWED_HOSTS = ['pedagio-bd.onrender.com', '127.0.0.1', 'localhost']
+
 
 
 
