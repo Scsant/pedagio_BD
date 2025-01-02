@@ -14,6 +14,6 @@ def home(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # Acesso ao admin
-    path('api/', include(router.urls)),  # Inclui as rotas da API
+    path('api/', include('api.urls')),  # Inclui as rotas do app `api`
     path('', home),  # Define a rota para a URL base
 ]
